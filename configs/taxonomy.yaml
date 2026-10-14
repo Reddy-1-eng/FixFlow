@@ -1,0 +1,55 @@
+# BuildFail-SLM: Controlled Failure Taxonomy Configuration
+# 14 Canonical Standard Categories for CI/CD Failure Classification
+
+categories:
+  - name: "Code Error"
+    description: "Syntax errors, naming errors, type mismatches, linting, formatting, or invalid code references."
+    keywords: ["syntax", "syntaxerror", "nameerror", "typeerror", "attributeerror", "lint", "flake8", "black", "checkstyle", "format"]
+  
+  - name: "Dependency Error"
+    description: "Missing packages, version conflicts, resolution failures, import errors, or incompatible libraries."
+    keywords: ["dependency", "import", "modulenotfound", "pip", "npm install", "maven", "gem", "unresolved", "package"]
+
+  - name: "Build Error"
+    description: "General build tool failures, compilation/packaging pipeline step failures, rake aborts, make failures."
+    keywords: ["build", "make", "gradle", "mvn", "rake", "build failed", "target failed"]
+
+  - name: "Test Failure"
+    description: "Unit test assertions, integration test failures, pytest errors, junit failures, test timeout."
+    keywords: ["test", "assertion", "pytest", "junit", "itestfailure", "spec", "fail", "expected", "got"]
+
+  - name: "Configuration Error"
+    description: "Malformed CI/CD workflow YAML, missing config keys, pom.xml misconfigurations, setup.py errors."
+    keywords: ["config", "workflow", "yaml", "yml", "pom.xml", "buildconfig", "settings", "configuration"]
+
+  - name: "Environment Error"
+    description: "Runner environment issues, missing OS binaries, disk space exhaustion, OOM, memory limits, wrong PATH."
+    keywords: ["environment", "os", "runner", "path", "oom", "disk", "memory", "out of memory", "resource"]
+
+  - name: "Compilation Error"
+    description: "Static type checking failures, C/C++/Java/Rust compiler errors, cannot find symbol, type checking."
+    keywords: ["compile", "compilation", "javac", "cannot find symbol", "gcc", "clang", "cargo build"]
+
+  - name: "Runtime Error"
+    description: "Unhandled exceptions, null pointer exceptions, panics, crashes, segmentation faults."
+    keywords: ["runtime", "exception", "crash", "panic", "segfault", "nullpointer", "fatal"]
+
+  - name: "Infrastructure Error"
+    description: "CI runner cloud hardware failure, agent connectivity drop, runner provisioner failure."
+    keywords: ["infra", "infrastructure", "runner provisioner", "agent offline", "cloud failure"]
+
+  - name: "Authentication / Permission Error"
+    description: "Missing tokens, expired credentials, GitHub token permission denied, registry login failures."
+    keywords: ["auth", "permission", "denied", "token", "credential", "unauthorized", "license", "forbidden"]
+
+  - name: "Network Error"
+    description: "HTTP 5xx/4xx from external servers, socket timeouts, DNS resolution failure, git clone timeout."
+    keywords: ["network", "timeout", "connection", "dns", "http", "socket", "timed out", "unreachable"]
+
+  - name: "Deployment Error"
+    description: "Release step failure, staging/production push error, artifact upload failure, registry push error."
+    keywords: ["deploy", "release", "publish", "push", "staging", "production"]
+
+  - name: "Docker / Container Error"
+    description: "Dockerfile build failures, container startup crash, missing base image, daemon connection refused."
+    keywords: ["docker", "container", "image build", "dockerfile", "containerd"]

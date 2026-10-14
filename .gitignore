@@ -1,0 +1,57 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+frontend/node_modules/
+frontend/.next/
+frontend/.npm-cache/
+frontend/out/
+buildfail-slm/
+.pytest_cache/
+
+# Environment variables & secrets
+.env
+*.env.local
+*.env.production
+serviceAccountKey.json
+*serviceAccountKey*.json
+backend/serviceAccountKey.json
+backend/*serviceAccountKey*.json
+backend/*.key.json
+*firebase-credentials*.json
+backend/*credentials*.json
+
+# Deployment files & scripts (per user directive: exclude deployment files)
+firebase.json
+.firebaserc
+scripts/deploy_firebase.py
+scratch/
+
+# Dataset files & data directories (hosted on Hugging Face: https://huggingface.co/datasets/krishna1707/buildfail-dataset)
+data/
+data/**
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Hugging Face & PyTorch Caches & weights
+cache/
+.cache/
+*.pt
+*.bin
+*.onnx
+model/buildfail-slm/**
+runs/
+checkpoint-*/
+checkpoints_test_fp16/
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
