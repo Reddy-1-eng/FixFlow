@@ -1,13 +1,14 @@
 // Firebase Client Web SDK Configuration
+// All configuration keys are loaded strictly from environment variables for security.
 export const firebaseConfig = {
-  apiKey: "AIzaSyAsVzX8RLreLOC6h_EVkcXqBfCZstfYr1E",
-  authDomain: "fixflow-beb5b.firebaseapp.com",
-  databaseURL: "https://fixflow-beb5b-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "fixflow-beb5b",
-  storageBucket: "fixflow-beb5b.firebasestorage.app",
-  messagingSenderId: "1054104343503",
-  appId: "1:1054104343503:web:f058d06f16965c579ab8ba",
-  measurementId: "G-JKXHFZSRR3"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "",
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "",
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL || "",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "",
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || "",
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "",
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || "",
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID || ""
 };
 
 export default firebaseConfig;

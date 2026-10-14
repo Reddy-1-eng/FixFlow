@@ -13,10 +13,15 @@ frontend/out/
 buildfail-slm/
 .pytest_cache/
 
-# Environment variables & secrets
+# Environment variables & secrets (keep all API keys strictly local)
 .env
+.env.*
+*.env
+*.env.*
 *.env.local
 *.env.production
+frontend/.env*
+!**/.env.example
 serviceAccountKey.json
 *serviceAccountKey*.json
 backend/serviceAccountKey.json
