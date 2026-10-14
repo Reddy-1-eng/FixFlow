@@ -20,8 +20,6 @@ CI/CD Failure Chunk Localization (LogChunks, Traces, Assertions)
    ↓
 Fine-Tuned Coding SLM (Qwen2.5-Coder-7B-Instruct + 80k-Sample QLoRA Adapter)
    ↓
-Deterministic Consistency Gate & Patch Verifier (git apply check)
-   ↓
 Structured Diagnostic Output:
   - 13 Canonical Failure Categories (Zero Unknowns)
   - In-Depth Technical Root Cause Diagnosis
